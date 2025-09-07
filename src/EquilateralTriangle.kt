@@ -11,7 +11,4 @@ class EquilateralTriangle(_name: String): Triangle(_name) {
         print("Side length of the Equilateral Triangle $name is: $sideLength")
     }
 
-    override fun getArea(): Double {
-        return ((sqrt(3.0)/4) * (sideLength * sideLength))
-    }
 }

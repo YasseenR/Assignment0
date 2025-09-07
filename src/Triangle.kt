@@ -1,6 +1,6 @@
 import kotlin.math.sqrt
 
-abstract class Triangle(_name: String) : Shape(_name) {
+open class Triangle(_name: String) : Shape(_name) {
     var side1 = 0.0
     var side2 = 0.0
     var side3 = 0.0
