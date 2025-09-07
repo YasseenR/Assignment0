@@ -1,14 +1,12 @@
 import kotlin.math.sqrt
 
 class EquilateralTriangle(_name: String): Triangle(_name) {
-    var sideLength = 0.0
+
 
     fun setDimensions(_sideLength: Double) {
-        sideLength = _sideLength
-    }
-
-    override fun printDimensions() {
-        print("Side length of the Equilateral Triangle $name is: $sideLength")
+        side1 = _sideLength
+        side2 = _sideLength
+        side3 = _sideLength
     }
 
 }

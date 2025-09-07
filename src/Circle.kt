@@ -7,7 +7,9 @@ class Circle(_name: String): Shape(_name) {
     }
 
     override fun printDimensions() {
-        print("Radius of the Circle $name is: $radius ")
+        println("Radius of the Circle $name is: $radius ")
+        println("Area of the Circle $name is: ${getArea()}")
+        println("---------------------------------------------")
     }
 
     override fun getArea(): Double {

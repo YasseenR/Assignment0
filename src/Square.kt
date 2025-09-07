@@ -9,7 +9,9 @@ class Square(_name: String): Shape(_name) {
     }
 
     override fun printDimensions() {
-        print("Length and height of the Square $name are: $length and $height respectively.")
+        println("Length and height of the Square $name are: $length and $height respectively.")
+        println("Area of the Square $name is: ${getArea()}")
+        println("---------------------------------------------")
     }
 
     override fun getArea(): Double {

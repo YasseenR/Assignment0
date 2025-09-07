@@ -12,7 +12,9 @@ open class Triangle(_name: String) : Shape(_name) {
     }
 
     override fun printDimensions() {
-        print("Lengths of the Triangle $name are: $side1, $side2, $side3")
+        println("Lengths of the Triangle $name are: $side1, $side2, $side3")
+        println("Area of the Triangle $name is: ${getArea()}")
+        println("---------------------------------------------")
     }
 
     override fun getArea(): Double {
