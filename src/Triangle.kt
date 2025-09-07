@@ -1,3 +1,5 @@
+import kotlin.math.sqrt
+
 abstract class Triangle(_name: String) : Shape(_name) {
     var side1 = 0.0
     var side2 = 0.0
@@ -11,6 +13,11 @@ abstract class Triangle(_name: String) : Shape(_name) {
 
     override fun printDimensions() {
         print("Lengths of the Triangle $name are: $side1, $side2, $side3")
+    }
+
+    override fun getArea(): Double {
+        var perimeter = side1 + side2 + side3
+        return (sqrt(perimeter * (perimeter - side1) * (perimeter - side2) * (perimeter - side3)))
     }
 
 }

@@ -9,4 +9,8 @@ class Circle(_name: String): Shape(_name) {
     override fun printDimensions() {
         print("Radius of the Circle $name is: $radius ")
     }
+
+    override fun getArea(): Double {
+        return (3.14 * (radius * radius))
+    }
 }
